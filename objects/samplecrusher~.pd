@@ -1,0 +1,33 @@
+#N canvas 442 179 649 300 10;
+#X obj 23 25 inlet~;
+#X obj 67 35 inlet;
+#X obj 67 57 s \$0_sr;
+#X obj 106 14 loadbang;
+#X msg 106 36 20000;
+#X obj 23 127 samphold~;
+#X obj 74 102 phasor~ \$1;
+#X obj 74 81 r \$0_sr;
+#X obj 25 234 outlet~;
+#X obj 166 73 hsl 128 15 150 20000 0 0 empty empty empty -2 -8 0 10
+-262144 -1 -1 12700 1;
+#X floatatom 302 73 6 0 0 0 - - -, f 6;
+#X obj 10 171 crossfader~;
+#X obj 166 94 hsl 128 15 0 1 0 0 empty empty Wet/Dry 137 6 0 10 -262144
+-1 -1 12700 1;
+#X msg 191 29 0;
+#X connect 0 0 5 0;
+#X connect 0 0 11 0;
+#X connect 1 0 2 0;
+#X connect 3 0 4 0;
+#X connect 3 0 13 0;
+#X connect 4 0 2 0;
+#X connect 4 0 9 0;
+#X connect 5 0 11 1;
+#X connect 6 0 5 1;
+#X connect 7 0 6 0;
+#X connect 9 0 6 0;
+#X connect 9 0 10 0;
+#X connect 11 0 8 0;
+#X connect 12 0 11 2;
+#X connect 13 0 12 0;
+#X coords 0 -1 1 1 184 57 1 160 57;

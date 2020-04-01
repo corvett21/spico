@@ -1,0 +1,15 @@
+#N canvas 442 104 479 542 10;
+#X obj 63 -46 adc~;
+#X obj 63 29 outlet~;
+#X obj 133 -42 hsl 100 15 0 1 0 0 empty empty Gain 108 6 0 10 -262144
+-1 -1 0 1;
+#X obj 63 1 *~;
+#X obj 88 1 *~;
+#X obj 113 34 outlet~;
+#X connect 0 0 3 0;
+#X connect 0 1 4 0;
+#X connect 2 0 3 1;
+#X connect 2 0 4 1;
+#X connect 3 0 1 0;
+#X connect 4 0 5 0;
+#X coords 0 -1 1 1 144 37 1 126 -60;
